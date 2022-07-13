@@ -7,7 +7,7 @@ public class ForApplyExam {
 		
 		for (int i = 0; i <= 10; i++) {
 //			System.out.println("i가 2인 경우에만 수행되는 조건문");
-			if(i == 2) {
+			if(i % 2 == 0) {
 				sum = sum + i;
 				System.out.println("i의 현재 위치: " + i + " - 합계: " + sum);
 				
@@ -18,7 +18,15 @@ public class ForApplyExam {
 //			System.out.println();
 		}
 		
-		System.out.println("0~10까지의 짝수 합계는: " + sum);
+		int sum2 = 0;
+		
+		for (int i = 0; i <= 10; i++) {
+			if(i % 2 == 0) {
+				sum2 = sum2 + i;
+			}
+		}
+		
+		System.out.println("0~10까지의 짝수 합계는: " + sum2);
 	}
 
 }
